@@ -1,0 +1,30 @@
+---
+description: Enforce Ultracite (Biome) lint rules when writing TypeScript/React code
+globs: "**/*.{ts,tsx,js,jsx}"
+alwaysApply: false
+---
+
+# Ultracite Lint Conventions
+
+This project uses Ultracite (Biome) — not ESLint or Prettier.
+
+## Key rules to follow
+
+- Use `import type` for type-only imports
+- Add `type="button"` to all `<button>` elements
+- Never use `any` — use `unknown` or proper types
+- Never use `alert()`, `confirm()`, or `prompt()`
+- Use `===` not `==`
+- Use `const` by default, `let` only when reassigning
+- No unused variables or imports
+- Double quotes for strings, semicolons required
+
+## After writing code
+
+Run `bunx ultracite check` to validate. Fix issues with `bunx ultracite fix`.
+
+## Suppressing a rule
+
+```tsx
+// biome-ignore lint/category/ruleName: justification here
+```

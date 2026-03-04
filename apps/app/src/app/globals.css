@@ -1,0 +1,6 @@
+@import "@repo/ui-shadcn/styles";
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+}
