@@ -1,4 +1,4 @@
-@import "@repo/ui-shadcn/styles";
+@import "@repo/ui/styles/globals.css";
 
 @theme inline {
   --font-sans: var(--font-inter);

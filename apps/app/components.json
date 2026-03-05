@@ -5,7 +5,7 @@
   "tsx": true,
   "tailwind": {
     "config": "",
-    "css": "../../packages/ui/shadcn/src/styles/globals.css",
+    "css": "../../packages/ui/src/styles/globals.css",
     "baseColor": "neutral",
     "cssVariables": true
   },
@@ -14,8 +14,8 @@
     "components": "@/components",
     "hooks": "@/hooks",
     "lib": "@/lib",
-    "utils": "@repo/ui-shadcn/lib/utils",
-    "ui": "@repo/ui-shadcn"
+    "utils": "@repo/ui/lib/utils",
+    "ui": "@repo/ui/components"
   },
   "menuColor": "inverted",
   "menuAccent": "bold",

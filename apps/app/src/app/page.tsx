@@ -1,5 +1,5 @@
-import { Badge } from "@repo/ui-shadcn/badge";
-import { Button } from "@repo/ui-shadcn/button";
+import { Badge } from "@repo/ui/components/badge";
+import { Button } from "@repo/ui/components/button";
 import {
   Card,
   CardAction,
@@ -8,10 +8,12 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@repo/ui-shadcn/card";
-import { Input } from "@repo/ui-shadcn/input";
-import { Label } from "@repo/ui-shadcn/label";
-import { Separator } from "@repo/ui-shadcn/separator";
+} from "@repo/ui/components/card";
+import { Input } from "@repo/ui/components/input";
+import { Label } from "@repo/ui/components/label";
+import { Progress } from "@repo/ui/components/progress";
+import { Separator } from "@repo/ui/components/separator";
+import { Switch } from "@repo/ui/components/switch";
 
 export default function Home() {
   return (
@@ -24,7 +26,7 @@ export default function Home() {
           <p className="text-muted-foreground text-sm">
             All components below are imported from{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">
-              @repo/ui-shadcn
+              @repo/ui
             </code>{" "}
             &mdash; the shared shadcn/ui package powered by Base UI primitives.
           </p>
@@ -175,6 +177,23 @@ export default function Home() {
               </Button>
             </CardFooter>
           </Card>
+        </section>
+
+        <Separator />
+
+        <section className="flex flex-col gap-4">
+          <h2 className="font-medium text-sm">Switch</h2>
+          <div className="flex items-center space-x-2">
+            <Switch id="airplane-mode" />
+            <Label htmlFor="airplane-mode">Airplane Mode</Label>
+          </div>
+        </section>
+
+        <Separator />
+
+        <section className="flex flex-col gap-4">
+          <h2 className="font-medium text-sm">Progress</h2>
+          <Progress className="w-[60%]" value={60} />
         </section>
       </div>
     </div>

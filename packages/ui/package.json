@@ -1,11 +1,11 @@
 {
-  "name": "@repo/ui-shadcn",
+  "name": "@repo/ui",
   "version": "0.1.0",
   "private": true,
   "exports": {
-    "./*": "./src/components/ui/*.tsx",
+    "./components/*": "./src/components/*.tsx",
     "./lib/*": "./src/lib/*.ts",
-    "./styles": "./src/styles/globals.css"
+    "./styles/*": "./src/styles/*"
   },
   "scripts": {
     "check-types": "tsc --noEmit"
